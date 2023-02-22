@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:lab9/firebase_options.dart';
-import 'package:lab9/pages/login.dart';
+import 'package:lab10/firebase_options.dart';
+import 'package:lab10/pages/login.dart';
 
 
 Future<void> main() async {

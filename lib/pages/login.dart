@@ -1,7 +1,7 @@
 import 'package:auth_buttons/auth_buttons.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:lab9/services/auth_service.dart';
+import 'package:lab10/services/auth_service.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -21,7 +21,11 @@ class _MyWidgetState extends State<LoginPage> {
       body: Center(
         child: GoogleAuthButton(
           onPressed: () {
-            GoogleAuthService().signinbygoogle();
+            GoogleAuthService().signinbygoogle().then((userCredential){
+              if (userCredential==uid) {
+                navigate
+              }
+            });
             print(UserCredential);
           },
           style: AuthButtonStyle(
